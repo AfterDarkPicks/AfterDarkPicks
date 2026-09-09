@@ -3,54 +3,244 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<title>After Dark Picks 🔞</title>
+
+<meta name="description" content="Adults only. Explore tonight's After Dark Picks.">
 <meta name="robots" content="noindex,nofollow">
-<title>18+ Access</title>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="After Dark Picks 🔞">
+<meta property="og:description" content="Adults only. Explore tonight's After Dark Picks.">
+<meta property="og:url" content="https://afterdarkpicks.github.io/AfterDarkPicks/">
+<meta property="og:image" content="https://afterdarkpicks.github.io/AfterDarkPicks/preview.jpg">
+<meta property="og:image:secure_url" content="https://afterdarkpicks.github.io/AfterDarkPicks/preview.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- X / Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="After Dark Picks 🔞">
+<meta name="twitter:description" content="Adults only. Explore tonight's picks.">
+<meta name="twitter:image" content="https://afterdarkpicks.github.io/AfterDarkPicks/preview.jpg">
+
+<meta name="theme-color" content="#160f1c">
+
 <style>
-*{box-sizing:border-box}
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+    margin:0;
+    padding:0;
+    min-height:100%;
+}
+
 body{
- margin:0; min-height:100vh; display:grid; place-items:center;
- font-family:Arial,Helvetica,sans-serif;
- background:linear-gradient(145deg,#14121c,#26172c 55%,#11131a);
- color:#fff; padding:20px;
+    min-height:100vh;
+    display:grid;
+    place-items:center;
+    font-family:Arial,Helvetica,sans-serif;
+    background:
+        radial-gradient(circle at 20% 10%,rgba(255,59,101,.18),transparent 35%),
+        radial-gradient(circle at 80% 90%,rgba(126,87,194,.18),transparent 40%),
+        linear-gradient(145deg,#0c0b10,#1b101f 55%,#0d0e14);
+    color:#fff;
+    padding:20px;
 }
+
 .card{
- width:min(100%,430px); padding:34px 24px; border-radius:24px;
- background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.13);
- box-shadow:0 24px 70px rgba(0,0,0,.42); text-align:center;
+    width:min(100%,430px);
+    padding:34px 24px;
+    border-radius:26px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.13);
+    box-shadow:
+        0 24px 70px rgba(0,0,0,.48),
+        inset 0 1px 0 rgba(255,255,255,.05);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    text-align:center;
 }
+
+.brand{
+    font-size:14px;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#ff6b8b;
+    margin-bottom:20px;
+}
+
 .badge{
- width:74px;height:74px;margin:0 auto 18px;border-radius:50%;
- display:grid;place-items:center;background:#ff3b65;font-weight:900;font-size:25px;
+    width:78px;
+    height:78px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:linear-gradient(145deg,#ff315d,#ff5a79);
+    box-shadow:0 12px 35px rgba(255,49,93,.28);
+    font-weight:900;
+    font-size:25px;
 }
-h1{font-size:28px;margin:0 0 12px}
-p{color:#d6d2dc;line-height:1.55;margin:0 auto 22px;max-width:340px}
-.notice{font-size:13px;color:#aaa4b0;margin-top:18px}
-.actions{display:grid;gap:11px}
+
+h1{
+    font-size:30px;
+    margin:0 0 12px;
+}
+
+p{
+    color:#d6d2dc;
+    line-height:1.55;
+    margin:0 auto 22px;
+    max-width:350px;
+}
+
+.actions{
+    display:grid;
+    gap:12px;
+}
+
 button{
- width:100%;border:0;border-radius:14px;padding:16px;font-size:16px;
- font-weight:800;cursor:pointer
+    width:100%;
+    border:0;
+    border-radius:15px;
+    padding:17px 16px;
+    font-size:16px;
+    font-weight:800;
+    cursor:pointer;
+    transition:
+        transform .15s ease,
+        opacity .15s ease;
 }
-.enter{background:#ff3b65;color:white}
-.exit{background:#2d2b34;color:#ddd}
-.small{font-size:12px;color:#918b98;margin-top:22px;line-height:1.45}
+
+button:active{
+    transform:scale(.98);
+}
+
+.enter{
+    background:linear-gradient(135deg,#ff315d,#ff5678);
+    color:#fff;
+    box-shadow:0 12px 26px rgba(255,49,93,.25);
+}
+
+.exit{
+    background:#2b2931;
+    color:#ddd;
+    border:1px solid rgba(255,255,255,.07);
+}
+
+.notice{
+    font-size:13px;
+    color:#aaa4b0;
+    margin-top:18px;
+}
+
+.small{
+    font-size:12px;
+    color:#8e8895;
+    margin-top:20px;
+    line-height:1.5;
+}
+
+.footer{
+    margin-top:20px;
+    font-size:11px;
+    color:#746e7a;
+}
+
+.loading{
+    opacity:.7;
+    pointer-events:none;
+}
 </style>
 </head>
+
 <body>
+
 <main class="card">
-  <div class="badge">18+</div>
-  <h1>Adults Only</h1>
-  <p>This page is intended only for adults aged 18 or over. By continuing, you confirm that you meet the legal age requirement in your location.</p>
-  <div class="actions">
-    <button class="enter" id="continueBtn">I am 18+ — Continue</button>
-    <button class="exit" onclick="history.length>1 ? history.back() : location.href='https://www.google.com'">Exit</button>
-  </div>
-  <div class="notice">External advertising content may be shown after you continue.</div>
-  <div class="small">Do not continue if you are under 18. Please follow the laws applicable in your country or region.</div>
+
+    <div class="brand">After Dark Picks</div>
+
+    <div class="badge">
+        18+
+    </div>
+
+    <h1>Adults Only</h1>
+
+    <p>
+        This page is intended only for adults aged 18 or over.
+        By continuing, you confirm that you meet the legal age
+        requirement in your location.
+    </p>
+
+    <div class="actions">
+
+        <button
+            class="enter"
+            id="continueBtn"
+            type="button">
+            I am 18+ — Continue
+        </button>
+
+        <button
+            class="exit"
+            id="exitBtn"
+            type="button">
+            Exit
+        </button>
+
+    </div>
+
+    <div class="notice">
+        External advertising content may be shown after you continue.
+    </div>
+
+    <div class="small">
+        Do not continue if you are under 18.
+        Please follow the laws applicable in your country or region.
+    </div>
+
+    <div class="footer">
+        After Dark Picks • Adults Only
+    </div>
+
 </main>
+
 <script>
-document.getElementById('continueBtn').addEventListener('click', function(){
-  window.location.href = 'https://www.profitableratecpmnetwork.com/q98znn23?key=a7b3d3fa7ce268e4c7e64c8df71eb5f9';
+
+const SMART_LINK =
+"https://www.profitableratecpmnetwork.com/q98znn23?key=a7b3d3fa7ce268e4c7e64c8df71eb5f9";
+
+const continueBtn = document.getElementById("continueBtn");
+const exitBtn = document.getElementById("exitBtn");
+
+continueBtn.addEventListener("click", function(){
+
+    continueBtn.classList.add("loading");
+    continueBtn.textContent = "Opening...";
+
+    setTimeout(function(){
+        window.location.href = SMART_LINK;
+    }, 250);
+
 });
+
+exitBtn.addEventListener("click", function(){
+
+    if(history.length > 1){
+        history.back();
+    }else{
+        window.location.href = "https://www.google.com";
+    }
+
+});
+
 </script>
+
 </body>
 </html>
